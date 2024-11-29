@@ -84,4 +84,4 @@ flowchart TD
 ```
 
 ## Contoh Output Program
-![Output](Contoh_output.jpg)
+![Output](Output.png)
