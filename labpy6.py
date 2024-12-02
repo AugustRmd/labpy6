@@ -55,8 +55,8 @@ def ubah_data():
 
             # Masukkan data baru
             print("Masukkan Data Baru (tekan Enter jika tidak ingin mengubah nilai tertentu)")
-            nim_baru = input("NIM : ").strip() or nim  # Gunakan NIM lama jika kosong
-            nama_baru = input("Nama : ").strip() or mhs['nama']  # Gunakan nama lama jika kosong
+            nim_baru = input("NIM : ").strip() or nim  
+            nama_baru = input("Nama : ").strip() or mhs['nama'] 
             tugas = input("Nilai Tugas: ").strip()
             tugas = float(tugas) if tugas else mhs['tugas']
             uts = input("Nilai UTS : ").strip()
@@ -66,7 +66,7 @@ def ubah_data():
             nilai_akhir = (tugas * 0.3) + (uts * 0.35) + (uas * 0.35)
 
             # Perbarui data
-            del data_mahasiswa[nim]  # Hapus data lama
+            del data_mahasiswa[nim] 
             data_mahasiswa[nim_baru] = {
                 "nama": nama_baru,
                 "tugas": tugas,
